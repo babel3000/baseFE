@@ -1,7 +1,7 @@
 //CSS Compiler
 
 const gulp = require("gulp")
-const { src, dest } = require("gulp");
+const { src, dest, series } = require("gulp");
 const sass = require('gulp-sass')(require('sass'));
 const css = () => {
   return src("./src/css/*.scss")
@@ -38,7 +38,6 @@ exports.html = html;
 const browserSync = require('browser-sync').create();
 
 // Static server
-const { series } = require('gulp');
 const serve = () => {
 
     browserSync.init({
@@ -46,10 +45,10 @@ const serve = () => {
             baseDir: "./dist/"
         }
     })
-
+    
     gulp.watch("./src/css/*.scss", css).on('change', browserSync.reload);
     gulp.watch("./src/pug/**/*.pug", html).on('change', browserSync.reload);
     gulp.watch("./src/js/*.js", js).on('change', browserSync.reload);
 };
 
-exports.serve = serve;
+exports.serve = series(html, css, js, serve);
