@@ -3,8 +3,11 @@ html
     head
         block head             
         script(src='./assets/script.js')
+        style 
+            include ./../css/fonts.css
         link(rel='stylesheet', href='./assets/style.css')
     body
         include ./components/header.pug
-        #main
+        main
             block content
+        include ./components/footer.pug

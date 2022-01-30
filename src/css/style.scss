@@ -1,2 +1,7 @@
 @import "_vars.scss";
+@import "_reset.scss";
 @import "_globals.scss";
+
+// Components
+@import "components/_header.scss";
+@import "components/_footer.scss";

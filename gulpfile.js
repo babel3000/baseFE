@@ -46,6 +46,7 @@ const serve = () => {
         }
     })
     
+    gulp.watch("./src/css/**/*.scss", css).on('change', browserSync.reload);
     gulp.watch("./src/css/*.scss", css).on('change', browserSync.reload);
     gulp.watch("./src/pug/**/*.pug", html).on('change', browserSync.reload);
     gulp.watch("./src/js/*.js", js).on('change', browserSync.reload);

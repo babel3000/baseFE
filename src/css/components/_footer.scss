@@ -1,0 +1,36 @@
+footer.main-footer {
+    border-top: 1px solid $primary-color;
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left-container ul{
+        display: flex;
+
+        li {
+            padding: 31px 17px;
+
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+    }
+
+    .right-container ul{
+        display: flex;
+
+        li {
+            padding: 31px 17px;
+
+            &:last-child {
+                padding-left: 0;
+            }
+        }
+    }
+}

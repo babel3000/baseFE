@@ -1,0 +1,25 @@
+header.main-header {
+    border-bottom: 1px solid $primary-color;
+
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        nav ul {
+            display: flex;
+
+            li {
+                padding: 23px 29px;
+
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
