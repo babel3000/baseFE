@@ -1,7 +1,7 @@
 # baseFE 0.0.1
-Base front end project installation w/ Pug and Sass.
+Base front end project installation w/ **Pug** and **SasS**.
 
-Content:
+## Content:
 - basic gulp tasks:
   - Pug compiler
   - SaSS compiler
@@ -13,3 +13,21 @@ Content:
   - Header w/ logo + navigation bar
   - Footer w/ nav + social links
   - Multiple layout components
+
+## INSTALL
+```
+npm install
+```
+
+## RUN PROJECT
+```
+gulp serve
+```
+
+## Gulp Tasks
+```
+gulp serve - launch local project
+gulp html - renders HTML from PUG
+gulp css - renders CSS from SasS
+gulp js - renders JS
+```
