@@ -1,0 +1,12 @@
+section.text-highlight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 220px);
+
+    .main-text {
+        font-size: 36px;
+        text-align: center;
+        line-height: 42px;
+    }    
+}
