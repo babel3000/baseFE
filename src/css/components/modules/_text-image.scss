@@ -1,0 +1,20 @@
+section.text-image {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    grid-gap: 122px;
+    align-items: center;
+
+    p {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    figcaption {
+        margin-top: 10px;
+        font-size: 18px;
+        font-style: italic;
+        text-align: right;
+    }
+}

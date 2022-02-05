@@ -8,5 +8,21 @@ section.text-highlight {
         font-size: 36px;
         text-align: center;
         line-height: 42px;
-    }    
+    }
+    &.w-img {
+        figcaption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 100%;
+        }
+        picture, img, figure {
+            width: 100%;
+        }
+
+        figure {
+            position: relative;
+        }
+    } 
 }

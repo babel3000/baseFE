@@ -1,0 +1,64 @@
+section.hero {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+
+    picture img {
+        border: 1px solid;
+    }
+
+    picture {
+        margin-bottom: 10px;
+    }
+
+    figcaption {
+        font-style: italic;
+        text-align: right;
+    }
+
+    figure {
+        padding-bottom: 30px;
+        border-bottom: 1px solid;
+        margin-bottom: 35px;
+    }
+
+    footer {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+
+        .hero-title {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 0;
+            line-height: 42px;
+        }
+
+        .hero-subtitle {
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 0;
+            line-height: 36px;
+        }
+
+        .title-wrapper {
+            width: 500px;
+            max-width: 50%;
+        }
+
+        .info-container {
+            border-left: 1px solid;
+            display: flex;
+            align-items: center;
+            padding-left: 11px;
+            margin-right: 35px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

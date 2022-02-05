@@ -1,0 +1,17 @@
+section.image {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+
+    picture img {
+        border: 1px solid;
+    }
+
+    picture {
+        margin-bottom: 10px;
+    }
+
+    figcaption {
+        font-style: italic;
+        text-align: right;
+    }
+}

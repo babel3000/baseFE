@@ -1,0 +1,19 @@
+section.double-image {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 992px;
+        margin: 0 auto 50px;
+        grid-gap: 24px;
+
+        img {
+            border: 1px solid;
+            margin-bottom: 5px;
+        }
+
+        figcaption {
+            text-align: right;
+            font-style: italic;
+        }
+    }
+}

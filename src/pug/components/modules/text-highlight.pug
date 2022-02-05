@@ -1,2 +1,10 @@
-section.text-highlight
-    p.main-text we believe in the power of <strong>design</strong> to build strong communities capable<br>of creating new possibilities for being and living.
+section.text-highlight(class=(img ? 'w-img' : ''))
+    if img
+        figure 
+            picture 
+                source(srcset=img.desktop, media="(min-width:992px)")
+                img(srcset=img.mobile)
+            figcaption 
+                p.main-text we believe in the power of <strong>design</strong> to build strong communities capable<br>of creating new possibilities for being and living.
+    else
+        p.main-text we believe in the power of <strong>design</strong> to build strong communities capable<br>of creating new possibilities for being and living.

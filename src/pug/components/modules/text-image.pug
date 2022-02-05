@@ -4,9 +4,8 @@ section.text-image(class=(isRight ? 'right-align' : ''))
                 p we are creative.<br>we are commited.<br>we are envolved.
                 p we are <strong>bira</strong>.
     figure 
-        figcaption Lorem Ipsum 3000
-            
         picture 
-             source(srcset="")
-             img(src="")
+                source(srcset=img.desktop, media="(min-width:992px)")
+                img(srcset=img.mobile)
+        figcaption Lorem Ipsum 3000
         

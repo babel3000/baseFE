@@ -1,0 +1,16 @@
+section.quote {
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        font-size: 30px;
+        line-height: 36px;
+        display: flex;
+
+        blockquote {
+            font-weight: 700;
+        }
+        cite {
+            margin-top: 36px;
+        }
+    }
+}
