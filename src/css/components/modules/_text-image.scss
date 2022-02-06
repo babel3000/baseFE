@@ -6,9 +6,22 @@ section.text-image {
     grid-gap: 122px;
     align-items: center;
 
+    &.right-align {
+        grid-template-columns: 500px 1fr;
+
+        figure{
+            order: -1;
+        }
+    }
+    
+
     p {
         font-size: 30px;
         line-height: 35px;
+    }
+
+    img {
+        border: 1px solid;
     }
 
     figcaption {
