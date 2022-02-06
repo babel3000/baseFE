@@ -11,6 +11,12 @@ const css = () => {
 exports.css = css;
 
 
+const fonts = () => {
+  return src("./src/fonts/*").pipe(dest("./dist/assets/fonts"))
+}
+
+exports.fonts = fonts;
+
 //JS Compiler
 
 const concat = require("gulp-concat");
@@ -52,4 +58,4 @@ const serve = () => {
     gulp.watch("./src/js/*.js", js).on('change', browserSync.reload);
 };
 
-exports.serve = series(html, css, js, serve);
+exports.serve = series(html, css, fonts, js, serve);
